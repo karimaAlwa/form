@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registraton Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x_icon" href="../icon/favicon-16x16.png">
+   
+</head>
+<body>
+    
+    <form class="form" method="post" >
+        <div class="form_Header">
+            <h1 >Create Account</h1>
+        </div>
+        <div class="form_body">
+            <div class="H_group">
+             <div class="form_group L">
+            <label for="Firstname" class="title">First name *</label>
+            <input class="form_input" type="text" id="Firstname" placeholder="enter your firstname" required>
+             </div>
+             <div class="form_group R">
+            <label for="Lastname" class="title">Last name</label>
+            <input class="form_input" type="text" id="Lastname" placeholder="enter your last name">
+             </div>
+            </div>
+              <div class="form_group">
+            <label for="Email" class="title">Email *</label>
+            <input class="form_input" type="email" id="Email" placeholder="enter your email" required>
+            </div>
+            <div class="H_group">
+                <div class="form_group L">
+            <label for="Password" class="title">Password *</label>
+            <input class="form_input" type="password" id="Password" placeholder="enter your password" required>
+                </div>
+                <div class="form_group R">
+            <label for="CPassword" class="title"> confirm Password *</label>
+            <input class="form_input"  type="password" id="CPassword" placeholder="enter your password again" required>
+                </div>
+            </div>
+            <div class="H_group">
+                <div class="form_group L">
+            <label class="title">Gender:</label>
+                 <div class="input-group">
+              <input type="radio" name="gender" value="male" id="male">
+               <label class="R_ch"  for="male">Male</label>
+              <input type="radio" name="gender" value="female" id="female">
+              <label  class="R_ch"  for="female"> Female</label>
+                </div>
+               </div>
+               <div class="form_group R">
+            <label class="title">Hobbies</label>
+                <div >
+              <input type="checkbox" value="Web">
+              <label class="R_ch" >Music</label>
+             <input type="checkbox" value="iOS"> 
+             <label  class="R_ch">Sports</label>
+              <input type="checkbox" value="Andriod">
+              <label class="R_ch" >Travel</label>
+              <input type="checkbox" value="Game">
+              <label class="R_ch">Movies</label>
+               </div>
+              </div>
+            </div>
+            <div class="H_group">
+                <div class="form_group L">
+            <label class="title">Source of Income</label>
+            <select class="form_input"  id="level" >
+              <option value="1">Employed</option>
+              <option value="2">Self-employed</option>
+              <option value="3">Unemployed</option>
+            </select>
+          </div>
+          <div class="form_group R">
+            <label for="Income" class="title">Income</label><br>
+            <input class="form_input" type="range" min="20" max="100" step="5"  value="0" id="Income" onChange="change();" style="height:28px;width:78%;padding:0;">
+            <span id="range-label">20K</span>
+          </div>
+         </div>
+         <div class="H_group">
+            <div class="form_group L">
+            <label for="choose-file" class="title">Upload Profile Picture</label>
+            <input  type="file" id="choose-file" size="80">
+          </div>
+          <div class="form_group R">
+            <label for="experience" class="label-title">Age</label>
+            <input class="form_input"  type="number" min="18" max="80"  value="20" >
+          </div>
+         </div>
+         <div class="form_group">
+          <label for="Bio" class="title">Bio</label><br>
+          <textarea class="form_input" id="Bio" cols="50" rows="4" style="height:auto ;"></textarea>
+          </div>
+        </div>
+        <div class="form_f">
+          <span>* required</span>
+          <input type="submit" value="Create" id="btn">
+        </div>
+    </form>
+</div>
+</body>
+</html>
